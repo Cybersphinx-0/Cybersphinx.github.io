@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <button> <a href="index.html">Home</a></button>
+  <button> <a href="maldives.html">Home</a></button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <style>
+        
+        form {
+            max-width: 500px;
+            margin:auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="text"], input[type="email"], input[type="date"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+
+        }
+    
+        input[type=Message]{
+            width: 100%;
+            padding: 50px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;}
+    </style>
+</head>
+<body>
+
+<h2 style="background-color:#6AA1AB;" Align="center">Booking Form</h2>
+
+<form action="submit_booking.php" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" Placeholder="Email" required>
+
+      <label for="decade">Number of Travelers:</label>
+        <input type="number" name="decade" id="decade" 
+        max="10" min="1"
+         placeholder="1" required >
+        
+    
+
+    <label for="date">Booking Date:</label>
+    <input type="date" id="date" name="date"  required>
+
+    
+        <label for="service">Select package:</label>
+    <select id="cars" name="cars">
+        <option value="">Choose a package</option>
+        <optgroup label="Kashmir">
+            <option value="toyota" >Best of Kashmir (Group Tour)</option>
+            <option value="honda"> Pretty Kashmir</option>
+            <option value="6n kashmir">6N Kashmir Vacay</option>
+            <option value="Kashmir Vacation - Land Only">Kashmir Vacation - Land Only</option>
+        </optgroup>
+        <optgroup label="Maldives">
+            <option value="bmw" selected>Dreamy Maldives</option>
+            <option value="audi"> Coral Reef - A Tropical Paradise</option>
+            <option value="mercedes">Meeru Island Exclusive Deal - Picturesque Maldives</option>
+            <option value="audi"> Medhufushi Island Resort</option>
+        </optgroup>
+        <optgroup label="Thailand">
+            <option value="chevrolet">Lounge in Pattaya</option>
+            <option value="chevrolet">Amazing Thailand Vacation</option>
+            <option value="tesla">Sunset Serenity - Pattaya Getaway</option>
+            <option value="chevrolet">Thailand Tapestry - Journey Across Cities</option>
+        </optgroup>
+        <optgroup label="Europe">
+            <option value="chevrolet">Route Summer- Guided Tour</option>
+            <option value="chevrolet">Awsome Austria Trip</option>
+            <option value="tesla">Finland with Santas Igloo Arctic Circle</option>
+            <option value="chevrolet">Beautiful Italy Holiday</option>
+            <optgroup label="Singapore">
+                <option value="chevrolet"> Marvels of Singapore - Group Tour</option>
+                <option value="chevrolet">Sensational Singapore and Bali Vacay</option>
+                <option value="tesla">Singapore Starlight Sailing with 3 Night Malaysia Cruise</option>
+                <option value="chevrolet">Unforgettable Singapore Vacay with Cruise</option>
+            </optgroup>
+            <optgroup label="Australia">
+                <option value="chevrolet"> Must Do Route- Australia</option>
+                <option value="chevrolet">Melbourne Australia</option>
+                <option value="tesla">The Big Australian Holiday - FIT</option>
+                <option value="chevrolet">Wonders of Australia - Melbourne, Sydney & Gold Coast</option>
+            </optgroup>
+    </select>
+   
+<label for="service">Special Prefrences</label>
+<input type="Message" id="service" name="service" placeholder="Your Message" class="msg">
+
+<label for="service">Select package:</label>
+<select id="cars" name="cars">
+<option value="">Choose Your Food Prefrences</option>
+
+    <option value="toyota">Breakfast</option>
+    <option value="honda"> Lunch</option>
+    <option value="6n kashmir">Dinner</option>
+
+    <input type="submit" value="Book Now">
+</form><Br><Br><br><br>
